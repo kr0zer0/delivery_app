@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+created Courier model with name:string and email:string fields
 
-Things you may want to cover:
+created Package model with tracking_number:string and delivery_status:boolean, added a many to one relationship with Courier model
 
-* Ruby version
+created pages for creating, editing and showing a courier, added a form for creating a package to a courier
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
