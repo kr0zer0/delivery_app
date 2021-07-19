@@ -1,0 +1,24 @@
+
+
+<div class="jumbotron">
+  <h2 class="display-4"><%= @courier.name %> | <%= @courier.email %></h2>
+  <hr class="my-4">
+
+    <h4>Add a new package: </h4>
+    <%= render './packages/form', package: @package %>
+
+  <hr class="my-4">
+
+    <p>
+    <strong>Added packages:</strong>
+    <% @courier.packages.find_each do |package| %>
+      <%= package.tracking_number %>
+    <% end %>
+    </p>
+
+  <hr class="my-4">
+  <%= link_to 'Edit', edit_courier_path(@courier), class: "btn btn-primary" %>
+  <%= link_to 'Back', couriers_path, class: "btn btn-danger" %>
+</div>
+
+
